@@ -1,0 +1,360 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-info{
+    background-color: rgb(59 130 246 / .5) !important;
+}
+.btn-primary{
+    background-color: rgb(3, 119, 228)  !important;
+}
+.btn    {
+    cursor: pointer ;
+}
+.is-invalid{
+    border-color: rgb(255, 146, 146);
+}
+.invalid-feedback{
+    color: rgb(255, 146, 146);
+}
+.btn-success{
+    background-color: rgb(7, 160, 134) !important;
+}
+.button{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    gap: 20px;
+}
+/* DEVIS MODEL */
+.devis{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;    
+    padding: 10px;
+    width: 100%;
+}
+@media screen and   (min-width:1119px) {
+    .devis{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+    
+}
+.devis-card{
+    padding: 20px;
+    width: 794px;
+    min-height: 1123px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.head-info{
+    margin-bottom: 5px;
+
+}
+.entr-info{
+    font-size: 10px;
+}
+.nom-societe{
+    padding: 10px 2px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(0, 201, 0) solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.nom-societe-input{
+    height: 20px;
+    background-color:transparent;
+    color: #002060;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Tahoma;
+}
+.nom-societe-input:focus{
+    outline: none;
+    border: none;
+}
+
+.prestation{
+    padding: 10px;
+    background-color:#0070C0;
+    border:  1px black solid;
+    display: flex;
+    font-weight: 600;
+    color: white;
+    justify-content: center;
+    padding: 5px;
+    height:fit-content;
+    margin-bottom: 5px;
+    width: 500px;
+    position: relative;
+    left: 126px;
+}
+.prestation-input{
+    min-height: 50px;
+    width: 500px;
+    overflow-y:hidden ;
+    background-color:transparent;
+    text-align: center;
+    font-size: 17px;
+    resize: none;
+    height:fit-content;
+}
+.prestation-input:focus{
+    outline: none;
+    border: none;
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.num h2{
+    font-size: 18px;
+    color: rgb(0, 18, 100);
+    padding: 5px;
+}
+/* TABLE */
+.prestation-nom{
+    background-color:#92D050;
+    height:fit-content;
+    width: 500px;
+
+}
+.prestation-nom textarea{
+    font-weight: 700;
+    background-color: transparent;
+    width: 100%;
+}
+.prestation-nom textarea:focus,.politique textarea:focus{
+    outline: none;
+    border: none;
+}
+.table-devis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.politique {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#politique-td {
+    border-bottom: none;
+    border-top: none;
+}
+
+.table-devis table{
+    width: 500px;
+}
+
+th:nth-child(4){
+    text-wrap: nowrap;
+    padding: 0px 15px !important;
+}
+div.nom-societe-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-devis  td,.table-devis  th {
+    padding:0px 5px ;
+    border: 1px solid black ;
+}
+thead th{
+    background-color: #002060;
+    color: white;
+    padding: 0px !important;
+    padding-bottom: 50px;
+    text-align: center ;
+}
+th{
+    
+    text-align: center; 
+}
+td,th {
+    text-align: center;
+    height: 50px;
+    padding-bottom: 10px;
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    
+}
+td{
+    height: 100%;   
+}
+.total-ht{
+    background-color: rgba(146,208,80);
+    width: 100%;
+    /* height: 30px; */
+}
+.total-ttc{
+    background-color: rgba(0, 32, 96);
+    width: 100%;
+    /* height: 30px; */
+    color: white;
+}
+/* .tva{
+    height: 30px;
+} */
+.remise{
+    color: red;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#quantity{
+    text-align: center;
+}
+#politique-td{
+    background-color: #fff;
+    border: none;
+    border-left: #000 solid 1px ;
+   }
+
+.details{
+    width: 74%;
+    height: auto ;
+}
+#details-div, #politique-div{
+    text-align: start;
+    font-size: 12px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.details textarea{
+    width: 100%;
+    min-height: 70px;
+    background-color: transparent;
+    font-size: 10px ;
+}
+.details textarea:focus{
+    outline: none;
+    border: none;
+}
+
+.quantity input
+{
+    text-align: center;
+
+    width: 50px ;
+}
+.quantity input:focus , .prix-unitaire input{
+    
+    outline: none;
+    border: none;
+}
+.prix-unitaire input{
+    width: 100px;
+}
+
+/* Politique colonne */
+.politique{
+    height: auto ;
+    padding: 0px;
+}
+.politique textarea{
+    width: 100%;
+    min-height: 70px;
+    background-color: transparent;
+    font-size: 10px ;
+}
+#politique-div{
+    background-color: #fff;
+    z-index: 200;
+
+}
+.footer{
+    margin: 0px 50px;
+    font-size: 12px;
+    margin-left: 80px;
+    position: relative;
+    left: 50px;
+}
+.mode-pay{
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 500px;
+}
+.partners{
+    display: flex;  
+    width: 500px;
+    margin-top: 200px;
+
+    justify-content: center;
+    position: relative;
+    left: 120px;
+}
+.partners img{
+    width: 500px !important;
+}
+.mode-pay .titre{
+    color: #660066;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-societe{
+    font-weight: 700;
+    color: #002060;
+}
+textarea{
+    height: 100%;
+}
+tfoot td{
+    padding: 10px 0px !important;
+}
+#mode-pay{
+    width: 90%;
+    padding: 3px;
+    height: 40px;
+    border: #f7f7f7 solid 0.3px;
+}
+#mode-pay:focus{
+    outline: none;
+}
+.mode-pay p{
+    display: flex;
+}
+#prestation-div{
+    color: white;
+    min-height: 50px;
+}
+
+#prestation-nom-div,#prestation-div{
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 400px;
+    height: 40px;
+    overflow: hidden;
+    text-wrap: wrap;
+    white-space: wrap;
+    word-wrap: break-word;  
+    text-overflow: ellipsis;
+}
+.addRemiseBtn{
+    background-color: #fffcd4 ;
+
+}
+.remsie_tr{
+    color: #000;
+}
+input:focus{
+    outline: none;
+}
+.remise_input{
+    color: red;
+}

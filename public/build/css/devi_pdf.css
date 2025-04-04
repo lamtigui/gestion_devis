@@ -1,0 +1,175 @@
+
+.devis-card{
+ width: 794px; /* A4 width in pixels at 96 DPI */
+ height: 1123px; /* A4 height in pixels at 96 DPI */
+ background-color: white;
+ box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.head-info{
+}
+.entr-info{
+ font-size: 10px;
+}
+.nom-societe{
+ background-color: rgb(255, 255, 255);
+ border: 1px rgb(0, 201, 0) solid;
+ display: flex;
+ justify-content: center;
+}
+.nom-societe-input{
+ height: 20px;
+ background-color:transparent;
+ color: #002060;
+ font-size: 18px;
+ text-align: center;
+ font-weight: 800;
+}
+.nom-societe-input:focus{
+ outline: none;
+ border: none;
+}
+
+.prestation{
+ background-color:#0070C0;
+ border:  1px black solid;
+ display: flex;
+ justify-content: center;
+ height:fit-content;
+}
+.prestation-input{
+ min-height: 50px;
+ width: 100%;
+ overflow-y:hidden ;
+ background-color:transparent;
+ color: white;
+ text-align: center;
+ font-size: 17px;
+ resize: none;
+ height:fit-content;
+}
+.prestation-input:focus{
+ outline: none;
+ border: none;
+}
+
+.num{
+ display: flex;
+ justify-content: center;
+}
+
+.num h2{
+ color: rgb(0, 18, 100);
+ display: flex;
+ justify-content: center;
+}
+/* TABLE */
+.prestation-nom{
+ background-color:#92D050;
+ width: 100%;
+ height:fit-content;
+}
+.prestation-nom textarea{
+ width: 100%;
+ resize: none;
+ background-color: transparent;
+ text-align: center;
+ 
+}
+.prestation-nom textarea:focus,.politique textarea:focus{
+ outline: none;
+ border: none;
+}
+.table-devis{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.table-devis table{
+ width: 100%;
+}
+td:first-child{
+ width: 50%;
+}
+td:nth-child(2){
+ width: 10%;
+}
+td:nth-child(3){
+ width: 20%;
+}
+td:nth-child(4){
+ width: 20%;
+}
+.table-devis  td,.table-devis  th{
+ border: 1px solid black ;
+ width: 100%;
+}
+table, th, td {
+ border: 1px solid #000;
+ border-collapse: collapse;
+}
+td{
+ height: 100%;
+}
+
+.details{
+ width: 100%;
+ height: auto ;
+}
+.details textarea{
+ width: 100%;
+ min-height: 70px;
+ background-color: transparent;
+ font-size: 10px ;
+}
+.details textarea:focus{
+ outline: none;
+ border: none;
+}
+
+.quantity input
+{
+ text-align: center;
+
+ width: 50px ;
+}
+.quantity input:focus , .prix-unitaire input{
+ 
+ outline: none;
+ border: none;
+}
+.prix-unitaire input{
+ width: 100px;
+}
+
+/* Politique colonne */
+.politique{
+ width: 100%;
+ height: auto ;
+ padding: 0px;
+}
+.politique textarea{
+ width: 100%;
+ min-height: 70px;
+ background-color: transparent;
+ font-size: 10px ;
+}
+.footer{
+ margin: 0px 50px;
+ font-size: 12px;
+}
+.mode-pay{
+ margin-top: 50px;
+ font-weight: 800;
+ margin-bottom: 10px;
+}
+.mode-pay .titre{
+ color: #660066;
+}
+.info-societe{
+ font-weight: 800;
+ color: black;
+ 
+}
+textarea{
+ height: 100%    ;
+}

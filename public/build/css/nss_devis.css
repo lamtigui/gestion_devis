@@ -1,0 +1,196 @@
+*{
+ font-family: Verdana;
+}
+.btn-info{
+ background-color: rgb(59 130 246 / .5) !important;
+}
+.btn-primary{
+ background-color: rgb(3, 119, 228)  !important;
+}
+.btn    {
+ cursor: pointer ;
+}
+.is-invalid{
+ border-color: rgb(255, 146, 146);
+}
+.invalid-feedback{
+ color: rgb(255, 146, 146);
+}
+.btn-success{
+ background-color: rgb(7, 160, 134) !important;
+}
+.button{
+ display: flex !important;
+ align-items: center;
+ gap: 10px;
+}
+
+.buttons{
+ display: flex;
+ justify-content: end;
+ text-align: end;
+ gap: 20px;
+}
+/* DEVIS MODEL */
+.devis{
+ display: flex;
+ flex-direction: column;
+ overflow-x: auto;    
+ padding: 10px;
+ width: 100%;
+}
+@media screen and   (min-width:1119px) {
+ .devis{
+     display: flex;
+     flex-direction: column;  
+     align-items: center;
+ }
+ 
+}
+.devis-card{
+ 
+ padding:100px 180px;
+ width:1122px !important;
+ min-height: 794px !important;
+ background-color: white;
+ box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+input:focus{
+ outline:none;
+}
+/* ADN CUSTOMAZATION HEADER */
+
+/* LEFT */
+.header-left img{
+ width: 230px;
+}
+/* RIGHT */
+.header-right{
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+ font-weight: 600;
+}
+.devis-titre{
+ color: rgb(112,48, 160);
+ font-size: 18px;
+ font-weight: 600;
+ text-align: right;
+ margin-bottom: 30px;
+}
+.num-ref input{
+ text-align: right;
+ width: 100px;
+}
+.client-nom input{
+ text-align: right;
+
+}
+.devis-titre input{
+ text-align: right;
+
+}
+/* TABLE */
+.devis-table{
+ margin:30px 3px ;
+}
+.devis-table table{
+ width: 100%;
+ height: 100%;
+ padding: 10px;
+ border-bottom: none;
+}
+.devis-table td {
+ border: 1px black solid;
+ /* padding-bottom:20px ; */
+}
+.devis-table th{
+ text-align: center;
+ background-color:  rgb(112,48, 160);
+ border: 1px black solid;
+ color: white;
+ font-size: 15px;
+}
+.devis-table td{
+ text-align: center;
+ font-weight: 600;
+ font-family:  'Calibri';
+}
+
+
+.devis-table tbody textarea{
+ min-height:200px;
+ width: 100%;
+ text-align: start;
+ padding: 10px;
+}
+.description{
+ max-width: 260px;
+
+}
+.devis-table tbody div{
+ text-align: left;
+ margin-left: 5px;
+ margin: 15px 0px;
+}
+.devis-table tfoot textarea{
+ width: 100%;
+ background-color: transparent;
+}
+.conditions{
+ color: white;
+ max-width: 250px;
+ background-color: rgb(0,32,96) ;
+ border:  rgb(0,32,96) 1px solid;
+ h6{
+     color: white;
+     text-align: left;
+     margin-left: 5px;
+ };
+ div{
+     text-align: left;
+     margin-top: 10px;
+     margin-left: 5px;
+ }
+}
+
+.devis-table textarea:focus{
+ outline: none;
+}
+.prix-td{
+ font-style: italic;
+}
+.qt-td{
+ font-weight: 500 !important;
+}
+.devis-table table input{
+ text-align: center;
+}
+.not-bordred{
+ border: none !important;
+ border-bottom: none !important;
+}
+#pu{
+ width: 100px;
+}
+#qt{
+ width: 80px;
+}
+/* Devis Info  */
+.devis-info{
+ display: flex;
+ justify-content: space-between;
+}
+/* MODE & CONDITIONS DIVS */
+.mode-conditions input{
+  width: 50%;
+}
+.conditions{
+ margin-top: 20px;
+}
+.small-inputs{
+ width: 50px !important;
+ text-align: end;
+ background-color: transparent;
+}
