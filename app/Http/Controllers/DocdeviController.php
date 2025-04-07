@@ -31,7 +31,7 @@ class DocdeviController extends Controller
         $taux_remise = $devi->remise_1 + $devi->remise_2 + $devi->remise_3 + $devi->remise_4 + $devi->remise_5;
         $total_ht2 = $devi->prix_hors_taxe - $taux_remise;
         $total_ttc = $total_ht2 + ($total_ht2 * $devi->taux_tva) / 100;
-        $pdf = Pdf::loadView("content.devis.devis_generation.pdf.pdf_winbest", compact("devi", "total_ht2", "total_ttc", "taux_remise", "partenaire_img"));
+        $pdf = Pdf::loadView("content.docdevis.devis_generation.pdf.pdf_winbest", compact("devi", "total_ht2", "total_ttc", "taux_remise", "partenaire_img"));
         // return view("content.devis.devis_generation.pdf.pdf_winbest", compact("devi","total_ht2","total_ttc","taux_remise","partenaire_img"));
         return $pdf->download("devi_$devi->id" . ".pdf");
     }

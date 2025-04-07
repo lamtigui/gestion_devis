@@ -47,12 +47,7 @@
                             </div>
                             <div class="xl:col-span-3 xl:col-start-10">
                                 <div class="flex gap-2 xl:justify-end">
-                                    <div>
-                                        <button type="button"
-                                            class="bg-white border-dashed text-custom-500 btn border-custom-500 hover:text-custom-500 hover:bg-custom-50 hover:border-custom-600 focus:text-custom-600 focus:bg-custom-50 focus:border-custom-600 active:text-custom-600 active:bg-custom-50 active:border-custom-600 dark:bg-zink-700 dark:ring-custom-400/20 dark:hover:bg-custom-800/20 dark:focus:bg-custom-800/20 dark:active:bg-custom-800/20"><i
-                                                data-lucide="download" class="inline-block size-4"></i> <span
-                                                class="align-middle">Import</span></button>
-                                    </div>
+                                 
                                     <button
                                         class="flex items-center justify-center size-[37.5px] p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"><i
                                             data-lucide="sliders-horizontal" class="size-4"></i></button>
