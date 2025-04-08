@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Facture;
+use App\Models\Devi;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $data = Devi::getData();
+        return view('index', compact('data'));
     }
     public function HistoriquePaiement(Request $request)
     {
