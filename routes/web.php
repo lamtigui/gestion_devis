@@ -12,6 +12,7 @@ use  App\Http\Controllers\DocdeviController;
 use App\Http\Controllers\ModeleController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\TailwickController;
+
 use App\Models\Docdevi;
 use Illuminate\Support\Facades\Route;
 
@@ -58,4 +59,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::get('ExportFactures','ExportFactures')->name('ExportFactures');
         Route::get('ExportFacturesForUser','ExportFacturesForUser')->name('ExportFacturesForUser');
     });
+    
+Route::get('/dashboard/stats', [HomeController::class, 'stats'])->name('dashboard.stats');
+
 });

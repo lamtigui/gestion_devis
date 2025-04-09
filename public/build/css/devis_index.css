@@ -7,3 +7,65 @@
     height: 100%;
 }
 
+ .calendar {
+     background-color: white;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     width: 310px;
+ }
+ .calendar-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .month-year {
+     font-size: 1.2em;
+     font-weight: bold;
+ }
+ .calendar-days {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     margin-top: 10px;
+ }
+ .day {
+     text-align: center;
+     padding: 5px;
+     font-weight: bold;
+     color: #333;
+ }
+ .calendar-days-container {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     grid-template-rows: repeat(5, 1fr);
+     gap: 5px;
+     margin-top: 10px;
+ }
+ .calendar-day {
+     text-align: center;
+     padding: 7px;
+     background-color: #f9f9f9;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 40px;
+ }
+ .calendar-day:hover {
+     background-color: #f0f0f0;
+ }
+ .calendar-day.today {
+     background-color: #4769ff;
+     color: white;
+     font-weight: bold;
+ }
+ .prev,
+ .next {
+     font-size: 1.5em;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+   

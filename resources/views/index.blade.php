@@ -296,81 +296,9 @@
             {{ $data->links() }}
         </div><!--end col-->
     </div><!--end grid-->
-    <style>
-        .calendar {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 310px;
-        }
-
-        .calendar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .month-year {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .calendar-days {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            margin-top: 10px;
-        }
-
-        .day {
-            text-align: center;
-            padding: 5px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .calendar-days-container {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            gap: 5px;
-            margin-top: 10px;
-        }
-
-        .calendar-day {
-            text-align: center;
-            padding: 7px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-        }
-
-        .calendar-day:hover {
-            background-color: #f0f0f0;
-        }
-
-        .calendar-day.today {
-            background-color: #4769ff;
-            color: white;
-            font-weight: bold;
-        }
-
-        .prev,
-        .next {
-            font-size: 1.5em;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-
+    
+    
     <div class="grid grid-cols-12 gap-x-5">
-            
                 <div class="calendar col-span-12 lg:col-span-6 order-[13] 2xl:order-1 card 2xl:col-span-3">
                     <div class="calendar-header">
                         <button class="prev" onclick="changeMonth(-1)">&#10094;</button>
@@ -388,76 +316,62 @@
                     </div>
                     <div id="calendar-days-container" class="calendar-days-container"></div>
                 </div>
-        <div class="col-span-12 lg:col-span-6 order-[13] 2xl:order-1 card 2xl:col-span-3">
-            <div class="card-body">
-                <h6 class="mb-3 text-15">Status of Monthly Campaign</h6>
-                <ul class="flex flex-col gap-5">
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center text-red-500 bg-red-100 rounded-md size-8 dark:bg-red-500/20 shrink-0">
-                            <i data-lucide="mail" class="size-4"></i>
-                        </div>
-                        <h6 class="grow">Clicked</h6>
-                        <p class="text-slate-500 dark:text-zink-200">9,745</p>
-                        <div class="w-12 text-green-500 ltr:text-right rtl:text-left">
-                            2.5%
-                        </div>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center rounded-md size-8 text-sky-500 bg-sky-100 dark:bg-sky-500/20 shrink-0">
-                            <i data-lucide="users-2" class="size-4"></i>
-                        </div>
-                        <h6 class="grow">Subscribe</h6>
-                        <p class="text-slate-500 dark:text-zink-200">3,352</p>
-                        <div class="w-12 text-green-500 ltr:text-right rtl:text-left">
-                            18.9%
-                        </div>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center text-orange-500 bg-orange-100 rounded-md size-8 dark:bg-orange-500/20 shrink-0">
-                            <i data-lucide="user-x-2" class="size-4"></i>
-                        </div>
-                        <h6 class="grow">Unsubscribe</h6>
-                        <p class="text-slate-500 dark:text-zink-200">85,745</p>
-                        <div class="w-12 text-red-500 ltr:text-right rtl:text-left">
-                            1.2%
-                        </div>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center text-green-500 bg-green-100 rounded-md size-8 dark:bg-green-500/20 shrink-0">
-                            <i data-lucide="eye" class="size-4"></i>
-                        </div>
-                        <h6 class="grow">Viewers</h6>
-                        <p class="text-slate-500 dark:text-zink-200">85,745</p>
-                        <div class="w-12 text-green-500 ltr:text-right rtl:text-left">
-                            11.6%
-                        </div>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <div
-                            class="flex items-center justify-center rounded-md size-8 text-slate-500 bg-slate-100 dark:bg-zink-600 dark:text-zink-200 shrink-0">
-                            <i data-lucide="package-open" class="size-4"></i>
-                        </div>
-                        <h6 class="grow">Opened</h6>
-                        <p class="text-slate-500 dark:text-zink-200">85,745</p>
-                        <div class="w-12 text-red-500 ltr:text-right rtl:text-left">
-                            3.1%
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-span-12 lg:col-span-6 order-[14] 2xl:order-1 card 2xl:col-span-3">
-            <div class="card-body">
-                <h6 class="mb-3 text-15">Subscription Distribution</h6>
-                <div id="subscriptionDistribution" class="apex-charts"
-                    data-chart-colors='["bg-custom-500", "bg-orange-500", "bg-green-500", "bg-yellow-500", "bg-purple-500"]'
-                    dir="ltr"></div>
-            </div>
-        </div>
+                <div class="col-span-12 lg:col-span-6 order-[14] 2xl:order-1 card 2xl:col-span-3">
+                    <div class="card-body">
+                        <h6 class="mb-3 text-15">📊 Résumé des Données</h6>
+                        <ul class="flex flex-col gap-5">
+                            @foreach ($stats as $model => $data)
+                                @php
+                                    // Associer des couleurs et icônes selon les modèles
+                                    $icons = [
+                                        'prospects' => ['icon' => 'user-plus', 'color' => 'sky'],
+                                        'devis' => ['icon' => 'clipboard-list', 'color' => 'red'],
+                                        'Devis Générés' => ['icon' => 'file-text', 'color' => 'pink'],
+                                        'appointments' => ['icon' => 'calendar', 'color' => 'green'],
+                                        'modele' => ['icon' => 'layers', 'color' => 'pink'],
+                                        'facture' => ['icon' => 'file', 'color' => 'gray'],
+                                        'default' => ['icon' => 'database', 'color' => 'slate'],
+                                    ];
+                
+                                    $key = strtolower($model);
+                                    $iconData = $icons[$key] ?? $icons['default'];
+                                @endphp
+                                <li class="flex items-center gap-3">
+                                    <div class="flex items-center justify-center text-{{ $iconData['color'] }}-500 bg-{{ $iconData['color'] }}-100 rounded-md size-8 dark:bg-{{ $iconData['color'] }}-500/20 shrink-0">
+                                        <i data-lucide="{{ $iconData['icon'] }}" class="size-4"></i>
+                                    </div>
+                                    <h6 class="grow capitalize">{{ ucfirst($model) }}</h6>
+                                    <p class="text-slate-500 dark:text-zink-200">{{ $data['count'] }}</p>
+                                    <div class="w-12 text-green-500 ltr:text-right rtl:text-left">
+                                        {{-- Affichage du pourcentage calculé --}}
+                                        {{ number_format($data['percentage'], 2) }}%
+                                    </div>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="col-span-12 lg:col-span-6 order-[14] 2xl:order-1 card 2xl:col-span-3 shadow-lg">
+                    <div class="card-body p-4">
+                        <h6 class="mb-3 text-18 font-semibold text-gray-800">Derniers Clients Créés</h6>
+                        <ul class="list-group list-group-flush">
+                            @foreach ($clients as $client)
+                                <li class="list-group-item d-flex justify-content-between align-items-center py-3 border-b">
+                                    <div class="d-flex align-items-center">
+                                        <span class="font-medium text-gray-800">{{ $client->name }}</span>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">{{ $client->phone }}</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                
+                
         <div class="col-span-12 lg:col-span-6 order-[15] 2xl:order-1 card 2xl:col-span-3">
             <div class="card-body">
                 <div class="flex items-center gap-4 mb-3">
