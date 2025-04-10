@@ -138,33 +138,33 @@
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5"> 
                                             {{ $item->date }} </td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->name }} </td>
+                                            {{ $item->appointment->Client->name }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->type_client }} </td>
+                                            {{ $item->appointment->Client->type_client }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->ville }} </td>
+                                            {{ $item->appointment->Client->ville }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->adresse }} </td>
+                                            {{ $item->appointment->Client->adresse }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->phone }} </td>
+                                            {{ $item->appointment->Client->phone }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->appointment->Client->email }} </td>
+                                            {{ $item->appointment->Client->email }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5"> 
-                                            {{ $item->prix_hors_taxe }} </td>
+                                            {{ $item->prix_hors_taxe }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->getRemiseFinalAttrinute() }} </td>
+                                            {{ $item->getRemiseFinalAttrinute() }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
                                             {{ $item->getMantantHTFinalAttrinute() }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
                                             {{ $item->getNewTauxTvaAttribute() }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->getMantantTvaAttribute() }} </td>
+                                            {{ $item->getMantantTvaAttribute() }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
-                                            {{ $item->getMantantTtcAttribute() }} </td>
+                                            {{ $item->getMantantTtcAttribute() }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
                                             {{ $item->mode_envoi == 'autre' ? $item->autre_mode_denvoi : $item->mode_envoi }}
                                         </td>
-                                        <td class="px-3.5 py-2.5 first:pl-5 last:pr-5"> {{ $item->etat }} </td>
+                                        <td class="px-3.5 py-2.5 first:pl-5 last:pr-5"> {{ $item->etat }}</td>
                                         <td class="px-3.5 py-2.5 first:pl-5 last:pr-5">
                                             <div class="relative dropdown">
                                                 <button
@@ -187,8 +187,7 @@
                                                                 class="block px-4 py-1.5 text-base text-slate-400 dropdown-item cursor-not-allowed dark:text-zink-500">
                                                                 <i data-lucide="file-text"
                                                                     class="inline-block size-3 ltr:mr-1 rtl:ml-1"></i>
-                                                                <span class="align-middle">Facture (Devis Not
-                                                                    Signed)</span>
+                                                                <span class="align-middle">Facture (Devis Not Signed)</span>
                                                             </span>
                                                         @endif
                                                     </li>
@@ -318,7 +317,7 @@
                 </div>
                 <div class="col-span-12 lg:col-span-6 order-[14] 2xl:order-1 card 2xl:col-span-3">
                     <div class="card-body">
-                        <h6 class="mb-3 text-15">📊 Résumé des Données</h6>
+                        <h6 class="text-15 grow text-center">📊 Résumé des Données</h6>
                         <ul class="flex flex-col gap-5">
                             @foreach ($stats as $model => $data)
                                 @php
@@ -357,7 +356,7 @@
                 
                 <div class="col-span-12 lg:col-span-6 order-[14] 2xl:order-1 card 2xl:col-span-3 shadow-lg">
                     <div class="card-body p-4">
-                        <h6 class="mb-3 text-18 font-semibold text-gray-800">Derniers Clients Créés</h6>
+                        <h6 class="text-15 grow text-center">Derniers Clients Créés</h6>
                         <ul class="list-group list-group-flush">
                             @foreach ($clients as $client)
                                 <li class="list-group-item d-flex justify-content-between align-items-center py-3 border-b">
@@ -375,10 +374,7 @@
         <div class="col-span-12 lg:col-span-6 order-[15] 2xl:order-1 card 2xl:col-span-3">
             <div class="card-body">
                 <div class="flex items-center gap-4 mb-3">
-                    <h6 class="text-15 grow">Traffic Source</h6>
-                    <a href="#!"
-                        class="underline transition-all duration-200 ease-linear text-custom-500 hover:text-custom-700">See
-                        More</a>
+                    <h6 class="text-15 grow text-center">Traffic Source</h6>
                 </div>
                 <div class="flex flex-col gap-5">
                     <div>
